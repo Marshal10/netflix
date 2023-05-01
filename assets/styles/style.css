@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+
+h3 {
+    color: #e5e5e5;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+a h3:hover {
+    color: #fff;
+}
+
+.signup-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(netflixback.jpg) no-repeat;
+    background-size: cover;
+}
+
+.column {
+    background-color: rgba(0, 0, 0, .75);
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    border-radius: 4px;
+}
+
+.column form {
+    display: flex;
+    flex-direction: column;
+    padding: 23px 68px 40px;
+    color: #fff;
+
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    width: 100%;
+    padding: 18px 24px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.signup-heading {
+    padding: 60px 68px 0px;
+    color: #fff;
+    font-size: 30px
+}
+
+.column form input[type="submit"] {
+    border: none;
+    background-color: #e50914;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+
+.logo img {
+    height: 75px;
+    width: 170px;
+}
+
+.signInMessage {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 80px;
+}
+
+.errorMessage {
+    color: #f00;
+    font-size: 14px;
+    text-align: center;
+}
+
+.wrapper {
+    min-width: 1050px;
+    min-height: 100%;
+    background-color: #141414;
+}
+
+/* .previewContainer{
+    width: 100%;
+} */
+.previewContainer {
+    position: relative;
+    display: flex;
+}
+
+.previewContainer.small {
+    width: 239px;
+    height: 129px;
+    margin-right: 4px;
+    display: inline-flex;
+}
+
+.previewContainer.small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.previewVideo,
+.previewImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.previewOverlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.mainDetails {
+    position: relative;
+    top: 35%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.previewOverlay .mainDetails h1 {
+    font-size: 40px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.previewOverlay .mainDetails h4 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.mainDetails .buttons button {
+    min-width: 150px;
+    height: 50px;
+    max-height: 50px;
+    background-color: rgba(51, 51, 51, .4);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 2px;
+    margin-bottom: 18px;
+    padding: 0 38px;
+    cursor: pointer;
+}
+
+.mainDetails .buttons button:hover {
+    background-color: #e6e6e6;
+    color: #000;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.entities,
+.videos {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.categoryContainer {
+    padding: 0 50px;
+}
+
+.errorBanner {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.season {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+
+
+}
+
+.episodeContainer {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.episodeContainer .contents {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    position: relative;
+}
+
+.episodeContainer img {
+    width: 230px;
+    height: 129px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span {
+    color: #fff;
+    width: 100%;
+    white-space: normal;
+    margin-bottom: 18px;
+}
+
+.episodeContainer .videoInfo {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.categoryContainer.noScroll .category .entities {
+    white-space: normal;
+}
+
+
+.watchContainer video {
+    width: 100%;
+    height: 100%;
+}
+
+.videoControls {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.videoControls h1 {
+    color: #fff;
+}
+
+.videoControls button {
+    font-size: 50px;
+    padding: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.upNext {
+    height: 100%;
+    justify-content: center;
+}
+
+.upNextContainer button {
+    padding: 0;
+}
+
+.videoControls h2,
+.videoControls h3 {
+    color: #fff;
+}
+
+.videoControls h2 {
+    margin-bottom: 20px;
+}
+
+.watchNav {
+    z-index: 2;
+}
+
+.seen {
+    font-size: 26px;
+    color: #2ecc71;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.topBar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    height: 70px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition: background-color 200ms linear;
+}
+
+.topBar.scrolled {
+    background-color: #141414;
+    transition: background-color 200ms linear;
+}
+
+.logoContainer {
+    height: 40px;
+}
+
+.logoContainer img {
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.topRight {
+    flex: 1;
+    text-align: right;
+}
+
+.topRight i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.topRight a{
+    margin-left: 10px;
+}
+
+.categoryContainer h1 {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.textBoxContainer {
+    padding: 100px 50px;
+}
+
+.inputTextBox {
+    border-radius: 3px;
+    height: 50px;
+    width: 600px;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.settingsContainer {
+    padding-top: 60px;
+    width: 80%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsContainer h2{
+    margin-bottom: 10px;
+
+}
+
+.settingsContainer form{
+    padding: 23px 0px 40px 0px;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="email"],
+.settingsContainer form input[type="password"] {
+    width: 300px;
+    height: 40px;
+    margin: 7px 0;
+}
+
+.settingsContainer form input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    margin-top: 7px;
+}
+
+.errorMessage{
+    text-align: left;
+}
+
+.alertSuccess{
+    color: greenyellow;
+}
+
+.alertError{
+    color: red;
+}
