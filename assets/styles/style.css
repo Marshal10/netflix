@@ -29,8 +29,8 @@ a h3:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(netflixback.jpg) no-repeat; 
-     background-size: cover; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(netflixback.jpg) no-repeat; 
+     background-size: cover;
     background-color:#373737;
 }
 
@@ -45,9 +45,8 @@ a h3:hover {
 .column form {
     display: flex;
     flex-direction: column;
-    padding: 23px 68px 40px;
+    padding: 23px 68px 20px;
     color: #fff;
-
 }
 
 .column form input[type="text"],
@@ -94,7 +93,8 @@ a h3:hover {
 .signInMessage {
     color: #fff;
     text-decoration: none;
-    padding-left: 80px;
+    margin-top: 16px;
+    text-align: center;
 }
 
 .errorMessage {
@@ -118,16 +118,19 @@ a h3:hover {
 }
 
 .previewContainer.small {
-    width: 239px;
-    height: 129px;
+    width: 300px;
+    height: 242px;
     margin-right: 4px;
     display: inline-flex;
+    /* transition: all 0.8s; */
+    overflow: hidden;
 }
 
 .previewContainer.small img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.8s;
 }
 
 .previewVideo,
@@ -442,3 +445,25 @@ a h3:hover {
 .alertError{
     color: red;
 }
+
+.previewContainer.small img:hover{
+    transform: scale(1.3);
+}
+
+
+
+.entities, .videos {
+
+    &::-webkit-scrollbar {
+     width: 0.7em;
+     height: 0.7em;
+     background-color: #373737;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+     border-radius: 3px;
+     background-color: #e50914;
+
+    
+    }
+  }

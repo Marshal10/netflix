@@ -38,8 +38,10 @@ function getInputText($name){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/styles/imgs/favicon.ico"></link>
+
     </link>
-    <title>Netflix</title>
+    <title>Marflix</title>
 </head>
 
 <body>
@@ -59,9 +61,11 @@ function getInputText($name){
                 <input type="password" placeholder="Password" name="password" required>
 
                 <input type="submit" name="submitButton" value="Sign In">
+
+                <a href="register.php" class="signInMessage">Don't have an account? Sign up now!</a>
             </form>
 
-            <a href="register.php" class="signInMessage">Don't have an account? Sign up now!</a>
+            
         </div>
     </div>
 </body>

@@ -25,18 +25,19 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
     </link>
+    <link rel="icon" type="image/x-icon" href="./assets/styles/imgs/favicon.ico"></link>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7d40258f74.js" crossorigin="anonymous"></script>
 
-    <title>Netflix</title>
+    <title>Marflix</title>
 </head>
 
 <body>
     <div class="wrapper">
-<?php
-if(!isset($hideNav)){
-    include_once("includes/navBar.php");
-}
-?>
+        <?php
+        if (!isset($hideNav)) {
+            include_once("includes/navBar.php");
+        }
+        ?>
